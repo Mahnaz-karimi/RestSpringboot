@@ -35,13 +35,6 @@ public class RestServiceApplication implements CommandLineRunner{
 	}
 }
 
-@Component
-class BookingCommandLineRunner implements CommandLineRunner {
-
-	@Override
-	public void run(String... args) throws Exception {
-	}
-}
 @Repository
 interface BookingRepository extends JpaRepository<Booking, Long> {
 

@@ -9,6 +9,7 @@
         <module name="RestApiSpringBoot" />
         <module name="4-RestApiSpringBoot" />
         <module name="restService" />
+        <module name="RestSpringboot" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="4-RestApiSpringBoot" options="-parameters" />
       <module name="RestApiSpringBoot" options="-parameters" />
+      <module name="RestSpringboot" options="-parameters" />
       <module name="restService" options="-parameters" />
     </option>
   </component>

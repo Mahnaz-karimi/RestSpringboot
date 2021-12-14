@@ -1,4 +1,4 @@
-package com.restServicesSpring.restService.demo.exception;
+package com.restServicesSpring.restService.Employee.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

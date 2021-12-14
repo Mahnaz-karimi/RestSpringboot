@@ -1,4 +1,4 @@
-package com.restServicesSpring.restService.model;
+package com.restServicesSpring.restService.Employee.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,8 +13,8 @@ public class EmployeeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    
+    private Integer id;
+
     @Column(name="first_name")
     private String firstName;
     
@@ -23,12 +23,22 @@ public class EmployeeEntity {
     
     @Column(name="email", nullable=false, length=200)
     private String email;
-    
-    public Long getId() {
+
+	public EmployeeEntity(Integer id, String firstName, String lastName, String email) {
+		this.id=id;
+		this.firstName=firstName;
+		this.lastName=lastName;
+		this.email=email;
+	}
+
+	public EmployeeEntity() {
+	}
+
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
